@@ -8,4 +8,4 @@
 
 - 1회차 : OT
 - 2회차 : AI와 GEMINI CLI
-- 3회차 : Git, Github
+- 3회차 : Git, Github (commit, push 습관화)
