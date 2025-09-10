@@ -178,4 +178,3 @@
 
 
   git add나 git commit을 하기 전에 git status로 현재 상태를 확인하는 습관을 들이면 실수를 크게 줄일 수 있습니다.
-  
