@@ -212,3 +212,19 @@ gitignore 사용 시 주의할 점 몇 가지가 있습니다. 가장 중요한 
 
 
   따라서 gitignore.io는 실수를 줄이고, 표준적인 `.gitignore` 파일을 몇 초 만에 생성할 수 있게 도와주는 매우 유용한 도구라고 할 수 있습니다.
+
+  # github
+
+  ## 원격 저장소 생성, 연결, 동기화
+
+ 1. 원격 저장소 생성
+ 2. 지역 저장소 - 원격 저장소 연결  
+ `git remote add origin <원격 저장소 주소>`  
+
+    연결 확인 `git remote -v`
+ 3. 지역 저장소 -> 원격 저장소 연결  
+  `git push origin main`
+ 4. 원격 저장소 파일 생성   
+ 5. 지역 저장소 <- 원격 저장소 
+   
+     `git pull orig main`
