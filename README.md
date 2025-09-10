@@ -7,5 +7,9 @@
 ## 일차별 강의 내용
 
 - 1회차 : OT
+
 - 2회차 : AI와 GEMINI CLI
+
 - 3회차 : Git, Github (commit, push 습관화)
+   
+    폴더 **gemini**, **git**
