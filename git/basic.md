@@ -228,3 +228,9 @@ gitignore 사용 시 주의할 점 몇 가지가 있습니다. 가장 중요한 
  5. 지역 저장소 <- 원격 저장소 
    
      `git pull orig main`
+
+ 6. 연결된 원격 저장소를 삭제
+  
+    `git remote remove origin`
+
+    
