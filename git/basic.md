@@ -312,11 +312,19 @@ git reset의 세 가지 주요 옵션과 각각의 의미는 다음과 같습니
 # git정리
 
 ## 기억에 남아잇는 git에 대한 내용을 모두 아래에 작성해보세요.
-git 스냅샷 
- - 3가지 영역  
-작업 영역, 스테이지 영역, 저장소
+git 
 
- - 
+- 스냅샷
+
+  사진을 찍듯이 파일의 상태를 기록
+  변경된 파일을 추적, 저장, 복원 기능
+
+ - 3가지 영역  
+작업 트리, 스테이징 영역, 로컬 저장소
+
+ -  파일의 3가지 상태
+
+    수정, 스테이징, 커밋
 
  ----
 ` git add ` `git commit -m "~~~",` `git status` `git remove` `git push origin <주소>` `git pull origin <주소>`  `gitignore` `git remote add <주소>` `git remote remove <주소>` `git reset --(soft, mixed , **hard**절대금지)`
