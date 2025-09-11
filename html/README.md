@@ -30,3 +30,36 @@ input 태그의 용도를 결정하는 속성의 이름은 `type` 입니다.
   2. 선택 항목
   3. 버튼
   4. 기타 주요 유형
+
+  <div>
+        <label>
+          체크아웃:
+          <input type="date">
+          </label>
+          </div>
+          <div>
+          <label>
+            성인:
+           <input type="number" min="1" max="10" value="1">
+            </label>
+            </div>
+            <div>
+            <label>
+             어린이:
+            <input type="number" min="0" max="10" value="0">
+             </label>
+            </div>
+      <hr>
+      <div>
+        <h4>선호 객실 타입</h4>
+        <label><input type="radio" name="room">스탠다드</label>
+        <label><input type="radio" name="room">디럭스</label>
+        <label><input type="radio" name="room">스위트</label>
+      </div>
+      <label>
+        요청사항
+        <textarea placeholder="특별히 요청하고 싶은 내용을 적어주세요" rows="3" cols="20"></textarea>
+      </label>
+      <div>
+      <input type="submit" value="예약하기">
+      </div>
