@@ -63,3 +63,7 @@ input 태그의 용도를 결정하는 속성의 이름은 `type` 입니다.
       <div>
       <input type="submit" value="예약하기">
       </div>
+
+      css 
+      웹 페이지의 스타일을 정의하는 스타일시트 언어
+      
