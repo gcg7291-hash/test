@@ -30,4 +30,17 @@ console.log(Number("123") === 123);
 //  각 자료형 마다 최소 1개는 틀리다 (false) 로 변환
 //  false 가 아닌 데이터는 모두 맞다 (true) 로 변환
 //  숫자형 -> 불리언 형 변환
-//  0 ,-0 false
+//  0 ,-0, null, undefined, NaN , false, ""  === false
+
+// 암시적 불리언 형 변환
+// 불리언 데이터가 아닌 데이터에 대한 논리연산 (&&, ||, !)
+
+// 0 --암시적 불리언형변환 --> false -- not연산 --> true
+console.log(!0);
+
+//  &&정확한 논리연산자 작동 방식
+// 모두 true면 오른쪽 데이터 생성
+// 왼쪽 데이터가 false면 ,오른쪽 데이터를 생성
+console.log(1 || 0);
+console.log(0 || 10);
+console.log(2 && 1);
