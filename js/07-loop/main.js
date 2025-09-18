@@ -72,3 +72,5 @@ for (let i = 0; i < 5; i++) {
 }
 
 // break 와 continue 는 무조건 반복문 내 조건문과 함께 사용 특정 조건하에서 break와 continue를 실행시키게 코드를 작성
+
+// while ,for 다 사용 할수 있다 (for 횟수가 명확할때 사용)
