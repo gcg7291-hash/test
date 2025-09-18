@@ -1,0 +1,75 @@
+// if 조건문의 기본 구조
+
+// 여러줄 주석 : /* */
+/*
+if (조건식) {
+ //조건식이 참이면 실행되는 코드 영역
+}
+*/
+if (5 > 1) {
+  console.log("5는 1보다 크다");
+}
+
+/* if ~ else if 조건문 기본 구조
+if (조건식) {
+조건식이 참이면 실행되는 코드 영역
+}else if (조건식`) {
+조건식` 는 조건식이 거짓(false) 이라면 평가 된다
+}else if (조건식``) {
+조건식``는 조건식`가 거짓(false) 이라면 평가 된다
+}
+*/
+if (5 > 10) {
+  console.log("5는 10보다 크다");
+} else if (5 > 7) {
+  console.log("5는 7보다 크다");
+} else if (5 > 5) {
+  console.log("5는 5보다 크다");
+} else if (5 > 3) {
+  console.log("5는 3보다 크다");
+}
+
+/* if~ else if ~ else 조건문 기본 구조
+if (조건식) {
+} else if (조건식`) {
+} else {
+  else는 조건식이 없다.
+  대신 위의 모든 조건식이 거짓 (false)이면 실행
+  else 아래에는 또 다른 esle if 나 else가 존재 할 수 없다.
+}
+---
+if (조건식) {
+} else {
+  조건식이 거짓이면 실행
+}
+*/
+
+// 변수 number를 선언하고, 숫자 1을 할당
+let number = 1;
+
+// number 가 0보다 크면 "양수" 를 콘솔에 출력
+// number 가 0보다 큰게 아니라면 "음수" 를 콘솔에 출력
+//  if ~ else 문 구현
+if (number > 0) {
+  console.log("양수");
+} else {
+  console.log("음수");
+}
+
+// 변수 number2 를 선언하고, 숫자 0을 할당
+
+// 만약에 number2 가 0 보다 크면, "양수" 출력
+// 만약에 number2 가 0 보다 작으면, "음수" 출력
+// 그런데 모두 아니라면, "0" 출력
+
+// 조건문 코드 작성
+
+let number2 = 0;
+
+if (number2 > 0) {
+  console.log("양수");
+} else if (number2 < 0) {
+  console.log("음수");
+} else {
+  console.log("0");
+}
