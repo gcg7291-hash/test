@@ -64,3 +64,6 @@ let greet = `안녕하세요 ${name}입니다.`;
 console.log(greet);
 
 // var
+
+nmm2 = "얄루";
+console.log(nmm2);
