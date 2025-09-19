@@ -44,6 +44,82 @@ const multi = (number1, number2) => {
 //  ---
 //  매개변수와 반환값으로 구분한 함수 정의
 // 매개변수 x, 반환값 x => 활용도가 극히 낮음
+//  "Hello World" 출력 함수
+function sayHello() {
+  console.log("Hello World");
+}
+
+const sayHelloArrow = () => {
+  console.log("HEllo World");
+};
+
 // 매개변수 x, 반환값 o => 활용도가 낮음
+// 1을 생성(반환) 하는 함수
+function createOne() {
+  return 1;
+}
+const createOneArrow = () => {
+  return 1;
+};
+
 // 매개변수 o. 반환값 x => 활용도가 높음
+// 전달받은 매개변수가(number) 음수, 0 , 양수 인지를 판단해서 출력
+function determine(number) {
+  if (number < 0) {
+    console.log("음수");
+  } else if (number === 0) {
+    console.log("0");
+  } else {
+    console.log("양수");
+  }
+}
+
+// 화살표 함수 : function x, 함수명 x
+// 변수를 선언하고 변수에 화살표 함수를 할당
+const determineArrow = (number) => {
+  if (number < 0) {
+    console.log("음수");
+  } else if (number === 0) {
+    console.log("0");
+  } else {
+    console.log("양수");
+  }
+};
+
 // 매개변수 o, 반환값 o => 활용도가 극히 높음
+
+// 함수 선언식
+// 매개변수가 짝수면 true 반환
+// 매개변수가 홀수면 false 반환
+
+// 1. 변수 선언
+let number;
+// 2. 기능 코드 작성
+if (number % 2 === 0) {
+  // 짝수
+} else {
+  // 홀수
+}
+
+// 3. 함수를 선언한다
+// 4. 변수 -> 매개변수
+function evenOdd(number) {
+  if (number % 2 === 0) {
+    // 짝수
+    return true;
+  } else {
+    // 홀수
+    return false;
+  }
+}
+
+// 화살표 함수 표현 코드
+const evenOddArrow = (number) => {
+  if (number % 2 === 0) {
+    // 짝수
+    return true;
+  } else {
+    // 홀수
+    return false;
+  }
+};
