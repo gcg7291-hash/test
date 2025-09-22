@@ -18,7 +18,7 @@ const functionArrow = () => {};
 function calculator(operator) {
   // 화살표 함수를 할당받은 변수 add
   // 1. 변수에 할당이 가능하다
-  cosnt add = (n1, n2) => {
+  const add = (n1, n2) => {
     return n1 + n2;
   };
   if (operator === "더하기") {
