@@ -81,3 +81,62 @@ const newArray = numbers4.map((element) => {
   return element * 2;
 });
 console.log(newArray);
+
+const newArray2 = numbers4.filter((elemnet1) => {
+  if (elemnet1 % 2 === 0) {
+    return true;
+  } else {
+    return false;
+  }
+});
+console.log(newArray2);
+
+// reduce ()
+// 배열의 누적을 반환
+const numbers10 = [1, 2, 3, 4, 5];
+
+const result = numbers10.reduce((accValue, currElement) => {
+  //accValue : 이전 반복동안 반환된 값을 누적한 데이터
+  //currElement : 현재 원소
+
+  //반환값들이 누적된다.
+  return accValue + 1;
+  //accValue + 1
+  // ------------
+  // 0       + 1, => accValue = 1
+  // 1       + 1, => accValue = 2
+  // 2       + 1, => accValue = 3
+  // 3       + 1, => accValue = 4
+  // 4       + 1, => accValue = 5
+}, 100);
+console.log(result);
+
+const newArray3 = numbers4.reduce((elemnet1) => {
+  return elemnet1 + 1;
+});
+console.log(newArray3);
+
+// sort()
+// 배열을 정렬하는 코드
+// 원소를 2개씩 비교하며 정렬
+
+const numbers5 = [1, 5, 2, 4, 3];
+// 오름차순 축약
+//  return a - b
+// 내림차순 축약
+//  return b - a
+numbers5.sort((a, b) => {
+  // 정렬 기준
+  // 반환값이 양수라면 a가 뒤로 배치
+  // 반환값이 음수라면 a가 앞으로 배치
+  // 반환값이 0이라면 같다
+  if (a < b) {
+    return 1;
+  } else if (a > b) {
+    return -1;
+  } else {
+    return 0;
+  }
+});
+
+console.log(numbers5);
