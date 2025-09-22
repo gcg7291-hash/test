@@ -29,6 +29,11 @@ console.log(PI);
 // 내가 불러온 함수의 이름을 결정
 
 // 대표성을 띈다는 특징
-import Add from "./calculator.js";
+import calculator from "./calculator.js";
 
-console.log(Add(1, 2));
+console.log(calculator);
+
+console.log(calculator.add(1, 2));
+console.log(calculator.substract(1, 2));
+console.log(calculator.multiply(1, 2));
+console.log(calculator.multiplyArrow(1, 2));
