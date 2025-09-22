@@ -25,8 +25,10 @@ console.log(divide(4, 2));
 // 상수
 console.log(PI);
 
-// 하나만 불러오기
+// 하나만 불러오기 (Default Export)
 // 내가 불러온 함수의 이름을 결정
+
+// 대표성을 띈다는 특징
 import Add from "./calculator.js";
 
 console.log(Add(1, 2));
