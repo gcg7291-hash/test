@@ -76,4 +76,5 @@ console.log(keyValueArray);
 
 console.log(person2.hasOwnProperty("name"));
 
-// 
+//  객체의 메서드
+// 메서드란 객체의 속성으로 작성된 함수
