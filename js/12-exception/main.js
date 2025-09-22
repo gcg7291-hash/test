@@ -38,3 +38,9 @@ function errorFunction() {
   // fianlly에 의해서 함소가 종료되면 실행 x
   console.log("무조건 실행되는 코드 2");
 }
+
+const sayHello = (name) => {
+  return `안녕하세요, ${name}님!`;
+};
+
+console.log(sayHello("철수"));
