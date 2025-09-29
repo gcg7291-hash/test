@@ -1,4 +1,5 @@
 import React from "react";
+<<<<<<< HEAD
 import Rule from "./components/JSX/Rule";
 import InterPolation from "./components/JSX/Interpolation.";
 import Header from "./components/Header";
@@ -18,3 +19,16 @@ export default function App() {
   );
 }
 
+=======
+import OnClick from "./components/EventHandling/OnClick";
+import Onchange from "./components/EventHandling/Onchange";
+import OnSubmit from "./components/EventHandling/OnSubmit";
+export default function App() {
+  return (
+    <div>
+      <OnClick></OnClick>
+      <OnSubmit></OnSubmit>
+    </div>
+  );
+}
+>>>>>>> test
