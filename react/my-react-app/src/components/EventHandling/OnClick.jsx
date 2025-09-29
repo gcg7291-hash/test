@@ -12,7 +12,7 @@ export default function OnClick() {
           handleClick();
         }}
       >
-        클릭
+        클릭;
       </button>
     </div>
   );
