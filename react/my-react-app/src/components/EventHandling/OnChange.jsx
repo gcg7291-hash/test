@@ -26,8 +26,9 @@ export default function Onchange() {
     <div>
       {/* 실습2 */}
       {/* onChange 이벤트 속성에서 handleNumberChange 호출 */}
+      {/* input 태그의 onChange 속성에서 handleNumberChange 호출 */}
       <input
-        type="text"
+        type="number"
         className="w-7xl border-2 border-amber-400 p-2 m-2"
         onChange={(event) => {
           handleNumberChange(event);
@@ -36,7 +37,7 @@ export default function Onchange() {
 
       {/* {onChange 이벤트 속성 적용} */}
       <input
-        type="text"
+        type="number"
         className="w-7xl border-4 border-amber-400 p-2 m-2"
         // 이벤트 객체 event는 화살표 함수의 매개변수
         onChange={(event) => {
