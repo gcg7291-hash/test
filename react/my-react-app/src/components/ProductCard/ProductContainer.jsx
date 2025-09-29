@@ -30,18 +30,14 @@ export default function ProductContainer() {
     tags: ["가방", "노트북", "액세서리"],
     image: "https://picsum.photos/id/98/300/200",
   };
-  const { elements } = product1["target"]["elements"];
-  const { elements2 } = product2["target"]["elemnets"];
-  console.log(elements);
-  console.log(elements2);
 
   return (
     <div className="max-w-7xl mx-auto p-4">
       <h1 className="text-3xl font-bold mb-6 text-center">상품 목록</h1>
-      <div className="flex flex-wrap gap-4">
-        <ProductCard elements={name} />
-        <ProductCard elements={price} />
-        <ProductCard />
+      <div className="flex flex-wrap gap-4 justify-center">
+        <ProductCard product={product1} />
+        <ProductCard product={product2} />
+        <ProductCard product={product3} />
       </div>
     </div>
   );
