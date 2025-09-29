@@ -1,7 +1,7 @@
 import React from "react";
 import Parent from "./components/Props/Parent";
 import ProfileContainer from "./components/PropsExample/ProfileContainer";
-import CardContainer from "./components/Props/CardContainer";
+import CardContainer from "./components/PropsFunction/CardContainer";
 
 export default function App() {
   return (
