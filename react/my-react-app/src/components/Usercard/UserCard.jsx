@@ -6,7 +6,7 @@ export default function UserCard({ userData, handleClick }) {
         <div className="flex justify-center mb-4">
           <img
             className="w-24 h-24 rounded-full object-cover cursor-pointer"
-            src={userData.profileImage}
+            src={userData["profileImage"]}
             alt="사용자 프로필"
             onClick={() =>
               handleClick(userData.name, userData.age, userData.email)
@@ -17,8 +17,8 @@ export default function UserCard({ userData, handleClick }) {
           <h2 className="text-xl font-semibold text-gray-900 mb-2">
             {userData.name}
           </h2>
-          <p className="text-gray-600 mb-1">{userData.age}세</p>
-          <p className="text-blue-600 font-medium">{userData.email}</p>
+          <p className="text-gray-600 mb-1">{userData["age"]}세</p>
+          <p className="text-blue-600 font-medium">{userData["email"]}</p>
         </div>
       </div>
     </div>
