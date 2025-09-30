@@ -1,10 +1,8 @@
 import React from "react";
-import Parent from "./components/PropsChildren/Parent";
+import Container from "./components/Condition/Container";
 
 export default function App() {
-  return (
-    <div>
-      <Parent></Parent>
-    </div>
-  );
+  return <div>
+    <Container></Container>
+  </div>;
 }
