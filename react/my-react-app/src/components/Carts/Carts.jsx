@@ -64,9 +64,9 @@ export default function Carts() {
         <Product product={carts["products"][1]} />
         <Product product={carts["products"][2]} />
         <Product product={carts["products"][3]} />
-        {carts.products.map((product) => {
+        {/* {carts.products.map((product) => {
           <Product key={product.id} product={product} />;
-        })}
+        })} */}
       </div>
       {/* {carts.products.map((product) => {
         <product key={product["id"]} product={product} />;

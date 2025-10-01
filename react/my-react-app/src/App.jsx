@@ -1,10 +1,10 @@
 import React from "react";
-import Carts from "./components/Carts/Carts";
+import Container from "./components/State/Container";
 
 export default function App() {
   return (
     <div>
-      <Carts></Carts>
+      <Container></Container>
     </div>
   );
 }
