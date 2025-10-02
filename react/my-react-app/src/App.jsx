@@ -1,10 +1,9 @@
-import React from "react";
-import Container from "./components/StateAdvanced/Container";
-
+import React from 'react'
+import Request from './components/UseEffect/RequestData'
 export default function App() {
   return (
     <div>
-      <Container></Container>
+      <Request></Request>
     </div>
-  );
+  )
 }
