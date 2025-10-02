@@ -1,9 +1,11 @@
 import React from 'react'
-import Request from './components/UseEffect/RequestData'
+import MovieList from './components/TMDB/MovieList'
+import MovieDetail from './components/TMDB/MovieDetail'
+
 export default function App() {
   return (
     <div>
-      <Request></Request>
+      <MovieDetail></MovieDetail>
     </div>
   )
 }
