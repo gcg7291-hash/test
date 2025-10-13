@@ -15,6 +15,7 @@ export default function AuthLayout() {
             `${baseColor} ${isActitve ? activeCalss : ""}`
           }
           to="/auth"
+          end
         >
           {" "}
           인증 홈페이지
