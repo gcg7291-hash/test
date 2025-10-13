@@ -36,6 +36,7 @@
                                              // 9. 브랜치 삭제
                                              // 10.(로컬) git switch main
                                              // 11.(로컬) git pull origin main
+                                            // 12.(로컬) git branch -D 브랜치명
 
 
 
