@@ -13,7 +13,7 @@ export default function PostDetail() {
     // get a single porduct api 요청후 화면에 게시글 상세 정보 렌더링
     async function singleP() {
       const res = await axios(`https://dummyjson.com/products/${postId}`);
-      setPost(res["data"]);
+      setPost(res["data"]["posts"]);
     }
     singleP();
   }, [postId]);
