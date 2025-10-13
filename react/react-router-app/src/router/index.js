@@ -10,6 +10,7 @@ import AuthLayout from "../layout/AuthLayout";
 import AuthHome from "../pages/AuthPages/AuthHome";
 import Login from "../pages/AuthPages/Login";
 import Singnup from "../pages/AuthPages/Signup";
+import ProtectedLayout from "../layout/ProtectedLayout";
 
 // 라우터 설정 생성
 const router = createBrowserRouter([
@@ -28,8 +29,15 @@ const router = createBrowserRouter([
         Component: About,
       },
       {
-        path: "profile",
-        Component: Profile,
+        // path 속성 x
+        Component: ProtectedLayout,
+        // 보호할 경로와 컴포넌트 정의
+        children: [
+          {
+            path: "profile",
+            Component: Profile,
+          },
+        ],
       },
     ],
   },
