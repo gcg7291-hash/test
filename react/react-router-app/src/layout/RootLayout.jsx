@@ -1,7 +1,7 @@
-import React from 'react'
-import { Link } from "react-router-dom"
+import React from "react";
+import { Link } from "react-router-dom";
 //Outlet 컴포넌트 불러오기
-import { Outlet } from 'react-router-dom'
+import { Outlet } from "react-router-dom";
 
 export default function RootLayOut() {
   return (
@@ -11,10 +11,10 @@ export default function RootLayOut() {
         <Link to="/about">소개 페이지</Link>
         <Link to="/profile">사용자 정보 페이지</Link>
         <Link to="/auth">인증 페이지</Link>
-
+        <Link to="/posts">Post 목록 페이지</Link>
       </div>
       {/* Outlet 컴포넌트 : 중첩된 자식 컴포넌트가 위치할 구멍 */}
-      <Outlet/>
+      <Outlet />
     </div>
-  )
+  );
 }

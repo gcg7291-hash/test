@@ -11,7 +11,8 @@ import AuthHome from "../pages/AuthPages/AuthHome";
 import Login from "../pages/AuthPages/Login";
 import Singnup from "../pages/AuthPages/Signup";
 import ProtectedLayout from "../layout/ProtectedLayout";
-
+import PostDetail from "../pages/RootPages/PostDetail";
+import PostList from "../pages/RootPages/PostList";
 // 라우터 설정 생성
 const router = createBrowserRouter([
   {
@@ -27,6 +28,14 @@ const router = createBrowserRouter([
       {
         path: "about",
         Component: About,
+      },
+      {
+        path: "posts",
+        Component: PostList,
+      },
+      {
+        path: "posts/:postId",
+        Component: PostDetail,
       },
       {
         // path 속성 x
