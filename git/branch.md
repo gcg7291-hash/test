@@ -22,7 +22,7 @@
 3. 작업
 4. `git add .`
 5. `git commit -m "커밋 메시지"`
-6. 브랜치 전환 : `git switch main`              // git push orgin [현재 브랜치명]
+6. 브랜치 전환 : `git switch main`              // git push origin [현재 브랜치명]
 7. 브랜치 병합 : `git merge 브랜치명`            // github 저장소 접속
 8. (선택) 브랜치 삭제 : `git branch -d 브랜치명` // github 병합처리
                                              // 1. 상단 pull requests 클릭
