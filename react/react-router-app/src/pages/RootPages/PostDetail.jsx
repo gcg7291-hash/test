@@ -22,7 +22,7 @@ export default function PostDetail() {
     <div>
       <p>게시글 id : {postId}</p>
       <p>게시글 제목: {post.title}</p>
-      <p>게시글 내용: {post.body}</p>
+      
     </div>
   );
 }
