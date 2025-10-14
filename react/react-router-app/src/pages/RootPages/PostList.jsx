@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
 import { useSearchParams } from "react-router-dom";
-
+import PATHS from "../../constants/paths";
 export default function PostList() {
   // searchParams : 쿼리 파라미터 값을 가진 객체
   // setSearchParams : 쿼리 파라미터 값을 변경하는 함수
@@ -43,7 +43,10 @@ export default function PostList() {
       </button>
       {posts.map((post) => {
         return (
-          <Link key={post.id} to={`/posts/${post.id}`}>
+          // <Link key={post.id} to={`/posts/${post.id}`}>
+          //   No.{post.id} - {post.title}
+          // </Link>
+          <Link key={post.id} to={PATHS.ROOT.getPostDetail(post.id)}>
             No.{post.id} - {post.title}
           </Link>
         );

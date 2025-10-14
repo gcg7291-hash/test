@@ -1,7 +1,7 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
 import { NavLink } from "react-router-dom";
-
+import PATHS from "../constants/paths";
 export default function AuthLayout() {
   const baseColor = "border-2 border-amber-300 p-2 ";
   // className = {`${baseColor}}  jsx보간법 + 템플릿 리터럴 혼합 삼항연산자는 표현식이라서 템플릿 리터럴이 적용 가능하다
@@ -14,7 +14,7 @@ export default function AuthLayout() {
           className={({ isActitve }) =>
             `${baseColor} ${isActitve ? activeCalss : ""}`
           }
-          to="/auth"
+          to={PATHS.AUTH.INDEX}
           end
         >
           {" "}
@@ -24,7 +24,7 @@ export default function AuthLayout() {
           className={({ isActitve }) =>
             `${baseColor} ${isActitve ? activeCalss : ""}`
           }
-          to=".auth/login"
+          to={PATHS.AUTH.LOGIN}
         >
           로그인 페이지
         </NavLink>
@@ -32,7 +32,7 @@ export default function AuthLayout() {
           className={({ isActitve }) =>
             `${baseColor} ${isActitve ? activeCalss : ""}`
           }
-          to="/auth/signup"
+          to={PATHS.AUTH.SIGNUP}
         >
           회원가입 페이지
         </NavLink>
@@ -40,7 +40,7 @@ export default function AuthLayout() {
           className={({ isActitve }) =>
             `${baseColor} ${isActitve ? activeCalss : ""}`
           }
-          to="/"
+          to={PATHS.AUTH.INDEX}
         >
           홈페이지
         </NavLink>
