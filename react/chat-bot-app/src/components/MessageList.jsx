@@ -8,7 +8,7 @@ export default function MessageList({ messages }) {
   useEffect(() => {
     // 응답 메시지가 추가되면 최하단으로 스크롤
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
-  }, [messages]);
+  }, [messages]); // messages 가 출력할때 마다 스크롤
 
   return (
     <div className="flex-1 overflow-y-auto p-4">
